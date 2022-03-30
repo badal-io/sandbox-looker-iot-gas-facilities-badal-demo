@@ -444,6 +444,7 @@
           offset: 100
       options:
         steps: 5
+    valueFormat: yyyy-mm-dd (hh:mm)
     show_view_names: false
     show_row_numbers: true
     transpose: false

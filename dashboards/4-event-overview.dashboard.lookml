@@ -134,6 +134,7 @@
           offset: 100
       options:
         steps: 5
+    valueFormat: yyyy-mm-dd (hh:mm)
     series_types: {}
     defaults_version: 1
     listen:
