@@ -2,6 +2,7 @@
   title: "(1) System Overview"
   layout: newspaper
   preferred_viewer: dashboards-next
+  description: ''
   refresh: 1 minute
   elements:
   - name: ''
@@ -97,7 +98,7 @@
     pivots: [measurements.property_measured, paths.designation]
     filters:
       measurements.property_measured: temperature,pressure,flowrate,density
-    sorts: [assets.asset_id 0]
+    sorts: [assets.asset_id 0, measurements.property_measured, paths.designation]
     limit: 500
     column_limit: 50
     show_view_names: false
@@ -121,6 +122,7 @@
     show_sql_query_menu_options: false
     show_totals: true
     show_row_totals: true
+    truncate_header: true
     series_cell_visualizations:
       measurements.total_value:
         is_active: true
@@ -571,230 +573,6 @@
     color_empty: "#fff"
     series_types: {}
     defaults_version: 0
-    query_fields:
-      measures: []
-      dimensions:
-      - align: left
-        can_filter: true
-        category: dimension
-        default_filter_value:
-        description:
-        enumerations:
-        field_group_label:
-        fill_style:
-        fiscal_month_offset: 0
-        has_allowed_values: false
-        hidden: false
-        is_filter: false
-        is_numeric: false
-        label: Assets Asset ID
-        label_from_parameter:
-        label_short: Asset ID
-        map_layer:
-        name: assets.asset_id
-        strict_value_format: false
-        requires_refresh_on_sort: false
-        sortable: true
-        suggestions:
-        tags: []
-        type: string
-        user_attribute_filter_types:
-        - string
-        - advanced_filter_string
-        value_format:
-        view: assets
-        view_label: Assets
-        dynamic: false
-        week_start_day: monday
-        dimension_group:
-        error:
-        field_group_variant: Asset ID
-        measure: false
-        parameter: false
-        primary_key: true
-        project_name: iot-gas-facilities-demo
-        scope: assets
-        suggest_dimension: assets.asset_id
-        suggest_explore: measurements
-        suggestable: true
-        is_fiscal: false
-        is_timeframe: false
-        can_time_filter: false
-        time_interval:
-        lookml_link: "/projects/iot-gas-facilities-demo/files/iot-gas-facilities-demo%2Fassets.view.lkml?line=6"
-        permanent:
-        source_file: iot-gas-facilities-demo/assets.view.lkml
-        source_file_path: iot-gas-facilities-demo/iot-gas-facilities-demo/assets.view.lkml
-        sql: "${TABLE}.asset_id "
-        sql_case:
-        filters:
-        sorted:
-          desc: false
-          sort_index: 0
-      - align: left
-        can_filter: true
-        category: dimension
-        default_filter_value:
-        description: Inlet or Outlet
-        enumerations:
-        field_group_label:
-        fill_style:
-        fiscal_month_offset: 0
-        has_allowed_values: false
-        hidden: false
-        is_filter: false
-        is_numeric: false
-        label: Assets Designation
-        label_from_parameter:
-        label_short: Designation
-        map_layer:
-        name: paths.designation
-        strict_value_format: false
-        requires_refresh_on_sort: false
-        sortable: true
-        suggestions:
-        tags: []
-        type: string
-        user_attribute_filter_types:
-        - string
-        - advanced_filter_string
-        value_format:
-        view: paths
-        view_label: Assets
-        dynamic: false
-        week_start_day: monday
-        dimension_group:
-        error:
-        field_group_variant: Designation
-        measure: false
-        parameter: false
-        primary_key: false
-        project_name: iot-gas-facilities-demo
-        scope: paths
-        suggest_dimension: paths.designation
-        suggest_explore: measurements
-        suggestable: true
-        is_fiscal: false
-        is_timeframe: false
-        can_time_filter: false
-        time_interval:
-        lookml_link: "/projects/iot-gas-facilities-demo/files/iot-gas-facilities-demo%2Fpaths.view.lkml?line=18"
-        permanent:
-        source_file: iot-gas-facilities-demo/paths.view.lkml
-        source_file_path: iot-gas-facilities-demo/iot-gas-facilities-demo/paths.view.lkml
-        sql: "${TABLE}.designation "
-        sql_case:
-        filters:
-      - align: left
-        can_filter: true
-        category: dimension
-        default_filter_value:
-        description:
-        enumerations:
-        field_group_label:
-        fill_style:
-        fiscal_month_offset: 0
-        has_allowed_values: false
-        hidden: false
-        is_filter: false
-        is_numeric: false
-        label: Assets Field Meter Tag
-        label_from_parameter:
-        label_short: Field Meter Tag
-        map_layer:
-        name: paths.field_meter_tag
-        strict_value_format: false
-        requires_refresh_on_sort: false
-        sortable: true
-        suggestions:
-        tags: []
-        type: string
-        user_attribute_filter_types:
-        - string
-        - advanced_filter_string
-        value_format:
-        view: paths
-        view_label: Assets
-        dynamic: false
-        week_start_day: monday
-        dimension_group:
-        error:
-        field_group_variant: Field Meter Tag
-        measure: false
-        parameter: false
-        primary_key: false
-        project_name: iot-gas-facilities-demo
-        scope: paths
-        suggest_dimension: paths.field_meter_tag
-        suggest_explore: measurements
-        suggestable: true
-        is_fiscal: false
-        is_timeframe: false
-        can_time_filter: false
-        time_interval:
-        lookml_link: "/projects/iot-gas-facilities-demo/files/iot-gas-facilities-demo%2Fpaths.view.lkml?line=24"
-        permanent:
-        source_file: iot-gas-facilities-demo/paths.view.lkml
-        source_file_path: iot-gas-facilities-demo/iot-gas-facilities-demo/paths.view.lkml
-        sql: "${TABLE}.field_meter_tag "
-        sql_case:
-        filters:
-      - align: left
-        can_filter: true
-        category: dimension
-        default_filter_value:
-        description:
-        enumerations:
-        field_group_label:
-        fill_style:
-        fiscal_month_offset: 0
-        has_allowed_values: false
-        hidden: false
-        is_filter: false
-        is_numeric: false
-        label: Devices Device ID
-        label_from_parameter:
-        label_short: Device ID
-        map_layer:
-        name: devices.device_id
-        strict_value_format: false
-        requires_refresh_on_sort: false
-        sortable: true
-        suggestions:
-        tags: []
-        type: string
-        user_attribute_filter_types:
-        - string
-        - advanced_filter_string
-        value_format:
-        view: devices
-        view_label: Devices
-        dynamic: false
-        week_start_day: monday
-        dimension_group:
-        error:
-        field_group_variant: Device ID
-        measure: false
-        parameter: false
-        primary_key: true
-        project_name: iot-gas-facilities-demo
-        scope: devices
-        suggest_dimension: devices.device_id
-        suggest_explore: measurements
-        suggestable: true
-        is_fiscal: false
-        is_timeframe: false
-        can_time_filter: false
-        time_interval:
-        lookml_link: "/projects/iot-gas-facilities-demo/files/iot-gas-facilities-demo%2Fdevices.view.lkml?line=6"
-        permanent:
-        source_file: iot-gas-facilities-demo/devices.view.lkml
-        source_file_path: iot-gas-facilities-demo/iot-gas-facilities-demo/devices.view.lkml
-        sql: "${TABLE}.device_id "
-        sql_case:
-        filters:
-      table_calculations: []
-      pivots: []
     refresh: 1 day
     listen:
       Timestamp Date: measurements.timestamp_date

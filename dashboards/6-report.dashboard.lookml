@@ -2,6 +2,7 @@
   title: "(6) Report"
   layout: newspaper
   preferred_viewer: dashboards-next
+  description: ''
   elements:
   - title: Total m3 Period Over Period Comparison (Days)
     name: Total m3 Period Over Period Comparison (Days)
@@ -385,7 +386,7 @@
   - name: Report Date Range
     title: Report Date Range
     type: field_filter
-    default_value: 1 month
+    default_value: 30 day
     allow_multiple_values: true
     required: true
     ui_config:

@@ -2,7 +2,8 @@
   title: "(3) Asset Overview"
   layout: newspaper
   preferred_viewer: dashboards-next
-  refresh: 10 seconds
+  description: ''
+  refresh: 1 minute
   elements:
   - name: ''
     type: text
@@ -1021,7 +1022,7 @@
   - name: Timeframe
     title: Timeframe
     type: field_filter
-    default_value: 3 day
+    default_value: 7 day
     allow_multiple_values: true
     required: false
     ui_config:

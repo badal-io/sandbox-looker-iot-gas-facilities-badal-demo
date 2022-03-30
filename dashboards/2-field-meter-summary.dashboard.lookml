@@ -2,7 +2,8 @@
   title: "(2) Field Meter Summary"
   layout: newspaper
   preferred_viewer: dashboards-next
-  refresh: 10 seconds
+  description: ''
+  refresh: 1 minute
   elements:
   - name: ''
     type: text
@@ -415,6 +416,7 @@
     defaults_version: 0
     listen:
       Field Meter Tag: paths.field_meter_tag
+      Timeframe: measurements_raw_events.timestamp_second
     row: 2
     col: 12
     width: 12
@@ -507,7 +509,7 @@
   - name: Timeframe
     title: Timeframe
     type: field_filter
-    default_value: 3 day
+    default_value: 7 day
     allow_multiple_values: true
     required: false
     ui_config:

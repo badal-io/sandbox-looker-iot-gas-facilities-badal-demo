@@ -2,7 +2,8 @@
   title: "(4) Event Overview"
   layout: newspaper
   preferred_viewer: dashboards-next
-  refresh: 10 seconds
+  description: ''
+  refresh: 1 minute
   elements:
   - title: Measurements Across Devices
     name: Measurements Across Devices

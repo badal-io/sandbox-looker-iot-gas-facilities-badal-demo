@@ -2,6 +2,7 @@
   title: "(5) Indicators and Analytics"
   layout: newspaper
   preferred_viewer: dashboards-next
+  description: ''
   refresh: 1 minute
   elements:
   - title: 1 Min Moving Average
