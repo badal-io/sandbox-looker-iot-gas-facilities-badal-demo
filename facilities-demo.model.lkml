@@ -11,6 +11,7 @@ datagroup: arima_trigger {
 
 explore: measurements {
   persist_for: "0 seconds" #This turns the Looker cache off for queries originating from this explore
+  # persist_for: "4 hours" # This is for demos with no live data coming in
 
   # Added an aggregate table to speed up the load time for the "Assets" tile in the System Overview dashboard
   # aggregate_table: rollup__assets_asset_id__assets_asset_type__paths_designation__property_measured__3 {
@@ -25,12 +26,6 @@ explore: measurements {
   #       measurements.timestamp_date: "7 day"
   #     ]
   #   }
-  # }
-
-  # DELETE THIS WHEN FINISHED TESTING ACCESS FILTER
-  # access_filter: {
-  #   field: device_connections.field_meter_tag
-  #   user_attribute: field_meters_access
   # }
 
   join: devices {
@@ -85,6 +80,7 @@ explore: measurements {
 explore: events_summary_view {
   hidden: no
   persist_for: "0 seconds" #This turns the Looker cache off for queries originating from this explore
+  # persist_for: "4 hours" # This is for demos with no live data coming in
   description: "This explore is for quickly loading event summary info."
 
   join: device_connections {
@@ -112,18 +108,21 @@ explore: events_summary_view {
 explore: events_summary_extended {
   hidden: yes
   persist_for: "0 seconds" #This turns the Looker cache off for queries originating from this explore
+  #persist_for: "4 hours" # This is for demos with no live data coming in
   description: "This explore is for quickly loading event summary info - it does not have liquid syntax so events are aggregated correctly."
 }
 
 explore: measurements_raw_events_duration {
   hidden: yes
   persist_for: "0 seconds" #This turns the Looker cache off for queries originating from this explore
+  # persist_for: "4 hours" # This is for demos with no live data coming in
   description: "This explore is for quickly loading event duration data."
 }
 
 explore: shrinkage_view {
   hidden: no
   persist_for: "0 seconds" #This turns the Looker cache off for queries originating from this explore
+  # persist_for: "4 hours" # This is for demos with no live data coming in
   description: "This explore is for quickly loading shrinkage data."
 
   join: over_short_view {
