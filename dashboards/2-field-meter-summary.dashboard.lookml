@@ -416,7 +416,6 @@
     defaults_version: 0
     listen:
       Field Meter Tag: paths.field_meter_tag
-      Timeframe: measurements_raw_events.timestamp_second
     row: 2
     col: 12
     width: 12
