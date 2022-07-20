@@ -1,5 +1,5 @@
 include: "/iot-gas-facilities-demo/measurements.view"
-include: "/facilities-demo.model"
+include: "/sandbox-facilities-demo.model"
 
 view: arima_model_training_data {
   derived_table: {
