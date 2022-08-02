@@ -1,5 +1,5 @@
 view: measurements_raw_events_duration {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.measurements_raw_events_duration`
+  sql_table_name: `iot-poc-354821.foglamp_demo.measurements_raw_events_duration`
     ;;
 
   dimension: compound_primary_key {

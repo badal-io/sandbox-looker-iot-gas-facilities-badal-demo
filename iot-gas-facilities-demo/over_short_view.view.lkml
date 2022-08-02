@@ -1,7 +1,7 @@
 include: "shrinkage_view.view"
 
 view: over_short_view {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.over_short_view`
+  sql_table_name: `iot-poc-354821.foglamp_demo.over_short_view`
     ;;
 
   dimension: compound_primary_key {

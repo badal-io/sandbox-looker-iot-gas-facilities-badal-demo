@@ -1,5 +1,5 @@
 view: events_summary_view {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.events_summary_view`
+  sql_table_name: `iot-poc-354821.foglamp_demo.events_summary_view`
     ;;
 
   dimension: event_id {

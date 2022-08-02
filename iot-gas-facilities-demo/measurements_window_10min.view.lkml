@@ -1,5 +1,5 @@
 view: measurements_window_10min {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.measurements_window_10min`
+  sql_table_name: `iot-poc-354821.foglamp_demo.measurements_window_10min`
     ;;
 
   dimension: compound_primary_key {

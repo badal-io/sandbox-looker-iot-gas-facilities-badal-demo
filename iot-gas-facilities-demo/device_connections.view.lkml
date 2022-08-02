@@ -1,5 +1,5 @@
 view: device_connections {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.device_connections`
+  sql_table_name: `iot-poc-354821.foglamp_demo.device_connections`
     ;;
 
   dimension: device_id {

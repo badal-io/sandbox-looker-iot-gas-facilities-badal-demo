@@ -1,5 +1,5 @@
 view: paths {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.paths`
+  sql_table_name: `iot-poc-354821.foglamp_demo.paths`
     ;;
 
   dimension: compound_primary_key {

@@ -1,7 +1,7 @@
 # This view does not have liquid syntax so events are aggregated correctly.
 
 view: events_summary_extended {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.events_summary_view`
+  sql_table_name: `iot-poc-354821.foglamp_demo.events_summary_view`
     ;;
 
   dimension: event_id {

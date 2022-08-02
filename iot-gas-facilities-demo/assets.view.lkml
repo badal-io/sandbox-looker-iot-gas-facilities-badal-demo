@@ -1,5 +1,5 @@
 view: assets {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.assets`
+  sql_table_name: `iot-poc-354821.foglamp_demo.assets`
     ;;
   drill_fields: [asset_id]
 

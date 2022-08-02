@@ -1,5 +1,5 @@
 view: shrinkage_view {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.shrinkage_view`
+  sql_table_name: `iot-poc-354821.foglamp_demo.shrinkage_view`
     ;;
 
   dimension: compound_primary_key {

@@ -1,5 +1,5 @@
 view: devices {
-  sql_table_name: `sandbox-keyera-poc.foglamp_demo.devices`
+  sql_table_name: `iot-poc-354821.foglamp_demo.devices`
     ;;
   drill_fields: [device_id]
 
