@@ -1,5 +1,5 @@
 - dashboard: 2_field_meter_summary
-  title: "(2) Field Meter Summary"
+  title: "(2) Field Meter Summary - iot-poc"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''

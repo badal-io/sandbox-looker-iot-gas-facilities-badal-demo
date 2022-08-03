@@ -1,5 +1,5 @@
 - dashboard: 3_asset_overview
-  title: "(3) Asset Overview"
+  title: "(3) Asset Overview - iot-poc"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''

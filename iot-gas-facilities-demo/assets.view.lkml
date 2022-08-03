@@ -8,7 +8,7 @@ view: assets {
     type: string
     sql: ${TABLE}.asset_id ;;
     link: {
-      label: "{{value}} Asset Overview Dashboard"
+      label: "{{value}} Asset Overview Dashboard - iot-poc"
       url: "https://badalio.ca.looker.com/dashboards-next/10?Asset%20ID=%22{{ value | encode_uri }}%22&Time%20Granularity=Hour&Timeframe=3%20day&Density+Unit+Conversion=kg"
       icon_url: "http://www.looker.com/favicon.ico"
     }

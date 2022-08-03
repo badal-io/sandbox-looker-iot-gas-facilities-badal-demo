@@ -1,5 +1,5 @@
 - dashboard: 6_report
-  title: "(6) Report"
+  title: "(6) Report - iot-poc"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''

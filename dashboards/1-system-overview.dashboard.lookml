@@ -1,5 +1,5 @@
 - dashboard: 1_system_overview
-  title: "(1) System Overview"
+  title: "(1) System Overview - iot-poc"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''

@@ -1,5 +1,5 @@
 - dashboard: 5_indicators_and_analytics
-  title: "(5) Indicators and Analytics"
+  title: "(5) Indicators and Analytics - iot-poc"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''

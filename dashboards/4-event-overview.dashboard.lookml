@@ -1,5 +1,5 @@
 - dashboard: 4_event_overview
-  title: "(4) Event Overview"
+  title: "(4) Event Overview - iot-poc"
   layout: newspaper
   preferred_viewer: dashboards-next
   description: ''
