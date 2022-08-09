@@ -4,8 +4,8 @@ include: "/iot-gas-facilities-demo/*.view.lkml"                # include all vie
 include: "/dashboards/*.dashboard.lookml"
 
 # datagroup: arima_trigger {
-  # sql_trigger: SELECT 1 ;;
-  # sql_trigger: SELECT CURRENT_DATE() ;;
+# sql_trigger: SELECT 1 ;;
+# sql_trigger: SELECT CURRENT_DATE() ;;
 # }
 
 explore: measurements {
