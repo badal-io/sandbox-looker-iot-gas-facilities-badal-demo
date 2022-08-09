@@ -7,7 +7,7 @@
   elements:
   - title: 1 Min Moving Average
     name: 1 Min Moving Average
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.average_value, measurements_window_1min.1min_simple_moving_average,
@@ -54,7 +54,7 @@
     height: 8
   - title: Relative Strength Index (RSI) - 1 Min
     name: Relative Strength Index (RSI) - 1 Min
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements_window_1min.timestamp_minute, measurements_window_1min.device_id,
@@ -105,7 +105,7 @@
     height: 8
   - title: Relative Strength Index (RSI) - 10 Min
     name: Relative Strength Index (RSI) - 10 Min
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements_window_10min.10min_relative_strength_indicator, measurements_window_10min.timestamp_minute10,
@@ -156,7 +156,7 @@
     height: 8
   - title: 10 Min Moving Average
     name: 10 Min Moving Average
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements_window_10min.timestamp_minute10, measurements_window_10min.device_id,
@@ -237,7 +237,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements_window_1min.device_id
@@ -251,7 +251,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements_window_1min.property_measured

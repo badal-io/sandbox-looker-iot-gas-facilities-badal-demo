@@ -32,7 +32,7 @@
     height: 2
   - title: Total Density
     name: Total Density
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.total_value, measurements.dynamic_timeframe, measurements.property_measured,
@@ -85,7 +85,7 @@
     height: 9
   - title: Average Pressure
     name: Average Pressure
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, measurements.property_measured, paths.field_meter_tag,
@@ -142,7 +142,7 @@
     height: 9
   - title: Flow Rate Total vs Average
     name: Flow Rate Total vs Average
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, measurements.total_value, measurements.average_value,
@@ -213,7 +213,7 @@
     height: 9
   - title: New Tile
     name: New Tile
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [devices.device_id]
@@ -262,7 +262,7 @@
     height: 4
   - title: New Tile
     name: New Tile (2)
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [devices.manufacturer]
@@ -311,7 +311,7 @@
     height: 2
   - title: New Tile
     name: New Tile (3)
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [devices.meter_type]
@@ -356,7 +356,7 @@
     height: 2
   - title: New Tile
     name: New Tile (4)
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [devices.model_number]
@@ -401,7 +401,7 @@
     height: 4
   - title: Critical Events by Day
     name: Critical Events by Day
-    model: facilities-demo
+    model: iot-poc
     explore: events_summary_view
     type: marketplace_viz_calendar_heatmap::calendar_heatmap-marketplace
     fields: [events_summary_view.count_of_events, events_summary_view.start_date]
@@ -422,7 +422,7 @@
     height: 6
   - title: Average Temperature
     name: Average Temperature
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, measurements.property_measured, paths.field_meter_tag,
@@ -487,7 +487,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: paths.field_meter_tag
@@ -501,7 +501,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.timeframe_picker
@@ -515,7 +515,7 @@
       type: advanced
       display: popover
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.timestamp_second
@@ -529,7 +529,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.density_unit_conversion

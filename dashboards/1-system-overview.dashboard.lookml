@@ -34,7 +34,7 @@
     height: 2
   - title: New Tile
     name: New Tile
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [assets.count_of_assets]
@@ -62,7 +62,7 @@
     height: 4
   - title: New Tile
     name: New Tile (2)
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [device_connections.count_of_field_meter_tags]
@@ -90,7 +90,7 @@
     height: 4
   - title: Assets (Past 7 Days)
     name: Assets (Past 7 Days)
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_grid
     fields: [assets.asset_id, assets.asset_type, measurements.property_measured, paths.designation,
@@ -139,7 +139,7 @@
     height: 4
   - title: Locations
     name: Locations
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_map
     fields: [assets.asset_id, assets.asset_type, assets.coordinates, devices.count_of_devices]
@@ -208,7 +208,7 @@
     height: 8
   - title: "% Events by Asset"
     name: "% Events by Asset"
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_pie
     fields: [events_summary_view.count_of_events, assets.asset_id]
@@ -274,7 +274,7 @@
     height: 6
   - title: List of Events
     name: List of Events
-    model: facilities-demo
+    model: iot-poc
     explore: events_summary_view
     type: looker_grid
     fields: [events_summary_view.device_id, paths.field_meter_tag, events_summary_view.event_type,
@@ -316,7 +316,7 @@
     height: 8
   - title: "% Events by Severity"
     name: "% Events by Severity"
-    model: facilities-demo
+    model: iot-poc
     explore: events_summary_view
     type: looker_pie
     fields: [events_summary_view.count_of_events, events_summary_view.severity]
@@ -367,7 +367,7 @@
     height: 6
   - title: "% Events by Device"
     name: "% Events by Device"
-    model: facilities-demo
+    model: iot-poc
     explore: events_summary_view
     type: looker_pie
     fields: [events_summary_view.count_of_events, events_summary_view.device_id]
@@ -419,7 +419,7 @@
     height: 6
   - title: Event Timeline
     name: Event Timeline
-    model: facilities-demo
+    model: iot-poc
     explore: events_summary_view
     type: looker_timeline
     fields: [paths.field_meter_tag, events_summary_view.event_type, events_summary_view.start_minute,
@@ -470,7 +470,7 @@
     height: 6
   - title: Field Meters at Facilities/Assets
     name: Field Meters at Facilities/Assets
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_grid
     fields: [assets.asset_id, assets.asset_type, device_connections.count_of_field_meter_tags]
@@ -560,7 +560,7 @@
     height: 4
   - title: Facility Hierarchy for Active Devices
     name: Facility Hierarchy for Active Devices
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: marketplace_viz_collapsible_tree::collapsible_tree-marketplace
     fields: [assets.asset_id, paths.designation, paths.field_meter_tag, devices.device_id]
@@ -583,7 +583,7 @@
     height: 8
   - title: Events by Type
     name: Events by Type
-    model: facilities-demo
+    model: iot-poc
     explore: events_summary_extended
     type: looker_column
     fields: [events_summary_extended.event_type, events_summary_extended.count_of_events]
@@ -639,7 +639,7 @@
       type: advanced
       display: popover
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.timestamp_date

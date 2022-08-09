@@ -3,10 +3,10 @@ connection: "iot-poc"
 include: "/iot-gas-facilities-demo/*.view.lkml"                # include all views in the views/ folder in this project
 include: "/dashboards/*.dashboard.lookml"
 
-# datagroup: arima_trigger {
-# sql_trigger: SELECT 1 ;;
-# sql_trigger: SELECT CURRENT_DATE() ;;
-# }
+datagroup: arima_trigger {
+  sql_trigger: SELECT 1 ;;
+  # sql_trigger: SELECT CURRENT_DATE() ;;
+}
 
 explore: measurements {
   persist_for: "0 seconds" #This turns the Looker cache off for queries originating from this explore

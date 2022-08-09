@@ -7,7 +7,7 @@
   elements:
   - title: Measurements Across Devices
     name: Measurements Across Devices
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, measurements.property_measured, devices.device_id,
@@ -59,7 +59,7 @@
     height: 7
   - title: Duration of Similar Events
     name: Duration of Similar Events
-    model: facilities-demo
+    model: iot-poc
     explore: measurements_raw_events_duration
     type: looker_line
     fields: [measurements_raw_events_duration.event_value, measurements_raw_events_duration.duration_seconds,
@@ -104,7 +104,7 @@
     height: 7
   - title: Highlighted Event Type
     name: Highlighted Event Type
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_timeline
     fields: [paths.field_meter_tag, events_summary_view.event_type, events_summary_view.start_minute,
@@ -180,7 +180,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.property_measured
@@ -194,7 +194,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.timeframe_picker
@@ -208,7 +208,7 @@
       type: advanced
       display: popover
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.timestamp_second

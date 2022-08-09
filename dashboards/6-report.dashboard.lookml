@@ -6,7 +6,7 @@
   elements:
   - title: Total m3 Period Over Period Comparison (Days)
     name: Total m3 Period Over Period Comparison (Days)
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_column
     fields: [measurements.date_in_period_date, measurements.previous_period_litres,
@@ -57,7 +57,7 @@
     height: 12
   - title: Current Period Flow
     name: Current Period Flow
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [measurements.current_period_litres]
@@ -116,7 +116,7 @@
     height: 3
   - title: Previous Period Flow
     name: Previous Period Flow
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [measurements.previous_period_litres]
@@ -175,7 +175,7 @@
     height: 3
   - title: Total Outage Minutes This Period
     name: Total Outage Minutes This Period
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [events_summary_view.total_event_duration_minutes, events_summary_view.property_measured]
@@ -238,7 +238,7 @@
     height: 3
   - title: New Tile
     name: New Tile
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: single_value
     fields: [measurements.litres_pop_change]
@@ -332,7 +332,7 @@
     height: 2
   - title: Total m3 Period Over Period Comparison (Month)
     name: Total m3 Period Over Period Comparison (Month)
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_column
     fields: [measurements.previous_period_litres, measurements.current_period_litres,
@@ -393,7 +393,7 @@
       type: advanced
       display: popover
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.current_date_range
@@ -407,7 +407,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.compare_to

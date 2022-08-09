@@ -32,7 +32,7 @@
     height: 2
   - title: Inlet vs Outlet Density
     name: Inlet vs Outlet Density
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, measurements.total_value, assets.asset_id,
@@ -80,7 +80,7 @@
     height: 12
   - title: Inlet vs Outlet Flow Rate
     name: Inlet vs Outlet Flow Rate
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, measurements.total_value, assets.asset_id,
@@ -137,7 +137,7 @@
     height: 12
   - title: Inlet vs Outlet Average Pressure
     name: Inlet vs Outlet Average Pressure
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, paths.designation, measurements.average_value]
@@ -190,7 +190,7 @@
     height: 12
   - title: Inlet vs Outlet Average Temperature
     name: Inlet vs Outlet Average Temperature
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, paths.designation, measurements.average_value]
@@ -242,7 +242,7 @@
     height: 12
   - title: Inlet Average Temperature by Measurement Points
     name: Inlet Average Temperature by Measurement Points
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, measurements.average_value,
@@ -299,7 +299,7 @@
     height: 6
   - title: Outlet Average Temperature by Measurement Points
     name: Outlet Average Temperature by Measurement Points
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, measurements.average_value,
@@ -358,7 +358,7 @@
     height: 6
   - title: Inlet Density by Measurement Points
     name: Inlet Density by Measurement Points
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, paths.field_meter_tag,
@@ -412,7 +412,7 @@
     height: 6
   - title: Outlet Density by Measurement Points
     name: Outlet Density by Measurement Points
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, paths.field_meter_tag,
@@ -466,7 +466,7 @@
     height: 6
   - title: Inlet Flow Rate by Measurement Points
     name: Inlet Flow Rate by Measurement Points
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, paths.field_meter_tag,
@@ -530,7 +530,7 @@
     height: 6
   - title: Outlet Flow Rate by Measurement Points
     name: Outlet Flow Rate by Measurement Points
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, paths.field_meter_tag,
@@ -590,7 +590,7 @@
     height: 6
   - title: Inlet Average Pressure by Measurement Points
     name: Inlet Average Pressure by Measurement Points
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, paths.field_meter_tag,
@@ -647,7 +647,7 @@
     height: 6
   - title: Outlet Average Pressure by Measurement Points
     name: Outlet Average Pressure by Measurement Points
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     type: looker_line
     fields: [measurements.dynamic_timeframe, assets.asset_id, paths.field_meter_tag,
@@ -747,7 +747,7 @@
     height: 3
   - title: Shrinkage Volume
     name: Shrinkage Volume
-    model: facilities-demo
+    model: iot-poc
     explore: shrinkage_view
     type: looker_line
     fields: [shrinkage_view.dynamic_timeframe, shrinkage_view.total_shrinkage_volume,
@@ -804,7 +804,7 @@
     height: 7
   - title: Mixed Volume
     name: Mixed Volume
-    model: facilities-demo
+    model: iot-poc
     explore: shrinkage_view
     type: looker_line
     fields: [shrinkage_view.dynamic_timeframe, shrinkage_view.asset_id, shrinkage_view.total_mixed_volume]
@@ -871,7 +871,7 @@
     height: 3
   - title: Over/Short Volume
     name: Over/Short Volume
-    model: facilities-demo
+    model: iot-poc
     explore: shrinkage_view
     type: looker_line
     fields: [over_short_view.total_over_short, shrinkage_view.dynamic_timeframe, shrinkage_view.asset_id]
@@ -935,7 +935,7 @@
     height: 7
   - title: Volume Measurement Inaccuracy
     name: Volume Measurement Inaccuracy
-    model: facilities-demo
+    model: iot-poc
     explore: shrinkage_view
     type: looker_line
     fields: [shrinkage_view.dynamic_timeframe, shrinkage_view.asset_id, over_short_view.measurement_inaccuracy]
@@ -1001,7 +1001,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: assets.asset_id
@@ -1015,7 +1015,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.timeframe_picker
@@ -1029,7 +1029,7 @@
       type: advanced
       display: popover
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.timestamp_second
@@ -1043,7 +1043,7 @@
       type: dropdown_menu
       display: inline
       options: []
-    model: facilities-demo
+    model: iot-poc
     explore: measurements
     listens_to_filters: []
     field: measurements.density_unit_conversion
